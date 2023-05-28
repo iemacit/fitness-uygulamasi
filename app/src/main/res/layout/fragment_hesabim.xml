@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3DDCEF"
+    tools:context=".FragmentHesabim">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-50dp"
+        android:gravity="center"
+        android:background="@drawable/profil_backround">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HESAPHANE"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/renk1"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/hesabim_logo"/>
+
+        <TextView
+            android:id="@+id/emailimiz"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:background="@color/renk1"
+            android:gravity="center"
+            android:text="*****@example.com"
+            android:textColor="@color/renk2"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/profil_backround">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="10dp"
+            android:text="Cinsiyetiniz :"
+            android:gravity="center"
+            android:textSize="27sp"
+            android:textColor="@color/renk1"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinnerCinsiyet"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:popupBackground="@color/renk1"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/profil_backround">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="10dp"
+            android:text="Boyunuz :"
+            android:gravity="center"
+            android:textSize="27sp"
+            android:textColor="@color/renk1"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextBoyunuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:hint="Boyunuz(metre)"
+            android:textColor="@color/renk1"
+            android:textColorHint="@color/renk1"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="85dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/profil_backround">
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="10dp"
+            android:text="Kilonuz :"
+            android:gravity="center"
+            android:textSize="27sp"
+            android:textColor="@color/renk1"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/editTextKilonuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:hint="Kilonuz(kg)"
+            android:textColor="@color/renk1"
+            android:textColorHint="@color/renk1"
+            android:textSize="20sp"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_Bmi"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginStart="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:textColor="@color/renk2"
+        android:background="@drawable/profil_backround2"
+        android:text="BMİ HESAPLA"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/textBmiHesap"
+        android:layout_width="380dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:background="@color/renk1"
+        android:text="index :"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/renk2"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

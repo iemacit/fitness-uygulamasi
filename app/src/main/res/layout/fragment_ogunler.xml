@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/renk"
+    tools:context=".FragmentOgunler">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="-50dp"
+        android:gravity="center"
+        android:background="@drawable/profil_backround">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KALORİMETRE"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/renk1"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextTarih"
+        android:layout_width="195dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="100dp"
+        android:textSize="17sp"
+        android:textColor="@color/renk2"
+        android:drawableRight="@drawable/date_month_24"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        android:focusable="false"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:background="@drawable/profil_backround3">
+
+        <Spinner
+            android:id="@+id/spinnerOgunSecimi"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="#0B1D61" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:background="@drawable/profil_backround3">
+
+        <Spinner
+            android:id="@+id/spinnerYemekSecim"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonYemek"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="370dp"
+        android:backgroundTint="@color/renk2"
+        android:text="Öğünü Tüket"
+        android:textColor="@color/renk1"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/buttonCalHesabi"
+        android:layout_width="150dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/renk2"
+        android:text="CL HESAPLA"
+        android:textColor="@color/renk1"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewCalBilgi"
+        android:padding="15dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="475dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/profil_backround"
+        android:text="kalori hesabı birazdan burada olacak tır"
+        android:textColor="@color/renk1"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
